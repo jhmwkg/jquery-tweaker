@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+    <title>JQuery Tweaker</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	
+	<style type="text/css">
+	#testMe
+	{
+	height:100px;
+	width:100px;
+	background-color:blue;
+	border-radius:50px;
+	}
+	</style>
+
+</head>
+
+<body>
+<!--Creates 2 rows of buttons-->
+<button id="btnMoreWd">More Width</button>
+<button id="btnMoreHt">More Height</button>
+<button id="btnMvRt">To Right</button>
+<br/>
+<button id="btnLessWd">Less Width</button>
+<button id="btnLessHt">Less Height</button>
+<button id="btnMvLf">To Left</button>
+<br/><br/>
+<!--The default style creates a blue circle to be tweaked by buttons-->
+<div id="testMe"></div>
+	
+<script>
+
+$("#btnMoreWd").click
+(
+function()
+	{
+	$("#testMe").animate({width:"300px"},1500);
+	}
+);
+
+$("#btnMoreHt").click
+(
+function()
+	{
+	$("#testMe").animate({height:"300px"},1500);
+	}
+);
+
+$("#btnMvRt").click
+(
+function()
+	{
+	$("#testMe").animate({marginLeft:"300px"},1500);
+	}
+);
+
+$("#btnLessWd").click
+(
+function()
+	{
+	$("#testMe").animate({width:"100px"},1500);
+	}
+);
+
+$("#btnLessHt").click
+(
+function()
+	{
+	$("#testMe").animate({height:"100px"},1500);
+	}
+);
+
+$("#btnMvLf").click
+(
+function()
+	{
+	$("#testMe").animate({marginLeft:"0"},1500);
+	}
+);
+
+</script>
+
+
+</body>
+</html>
